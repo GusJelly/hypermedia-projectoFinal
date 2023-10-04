@@ -6,19 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../dist/output.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="bg-slate-800 text-white">
         <!-- navbar -->
         <nav class="bg-teal-500">
-            <ul class="flex justify-evenly">
-                <li class="py-1 px-3 hover:bg-teal-950 hover:text-white hover:cursor-pointer">Home</li>
-                <li class="py-1 px-3 hover:bg-teal-950 hover:text-white hover:cursor-pointer">About</li>
-                <li class="py-1 px-3 hover:bg-teal-950 hover:text-white hover:cursor-pointer">Contact me</li>
+            <ul class="flex">
+                <li class="py-1 px-3 bg-slate-800"><a>Home</a></li>
+                <li class="py-1 px-3 hover:bg-slate-800 hover:text-white hover:cursor-pointer transition-all"><a href="info.html">About</a></li>
+                <li class="py-1 px-3 hover:bg-slate-800 hover:text-white hover:cursor-pointer transition-all"><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
 
         <!-- header -->
-        <h1 class="text-center text-6xl py-10 font-semibold">Gustavo Meireles</h1>
-        <h3 class="px-36 text-xl">A portfolio</h3>
+        <h1 class="text-center text-6xl py-32 font-semibold">Gustavo Meireles<br>
+                                                             ================</h1>
+        <div class="flex lg:px-52 md:px-36 sm:px-24">
+            <h2 class="text-6xl font-semibold pt-3">*</h3>
+                <p class="py-5 pl-4 text-xl">A Linux lover and daily enjoyer!</p>
+        </div>
+        <div class="flex lg:px-52 md:px-36 sm:px-24">
+            <h2 class="text-6xl font-semibold pt-3">*</h3>
+                <p class="py-5 pl-4 text-xl">Lover of everything programming.</p>
+        </div>
+        <div class="flex lg:px-52 md:px-36 sm:px-24">
+            <h2 class="text-6xl font-semibold pt-3">*</h3>
+                <p class="py-5 pl-4 text-xl">Life-long learner</p>
+        </div>
 
     </body>
 </html>
