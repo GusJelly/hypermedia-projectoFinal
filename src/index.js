@@ -1,7 +1,7 @@
 let bullet = document.getElementById("bullet");
 
 let title = document.getElementById("title");
-let myWork = document.getElementById("myWork");
+let bio = document.getElementById("bio");
 
 // element hover effect:
 function elementHover(element, symbol) {
@@ -30,7 +30,7 @@ function titleHover(element, symbol) {
 
 // titles
 titleHover(title, "=");
-elementHover(myWork, "#");
+elementHover(bio, "#");
 
 // bullets
 elementHover(bullet, "*");
@@ -39,7 +39,7 @@ elementHover(bullet, "*");
 
 
 // Change bullet point every couple of seconds:
-const bulletPoints = ["Lover of everything programming.", "A Linux lover and daily enjoyer!", "Life-long learner"]
+const bulletPoints = ["Lover of programming.", "Linux Developer", "Web Developer"]
 let indexBulletPoint = 0;
 
 function updateBulletPoint() {
@@ -51,5 +51,5 @@ function updateBulletPoint() {
   }
 }
 
-const bulletPointInterval = setInterval(updateBulletPoint, 2000);
+const bulletPointInterval = setInterval(updateBulletPoint, 3000);
 
