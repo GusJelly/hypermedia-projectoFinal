@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../dist/output.css" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body class="bg-slate-800 text-white antialiased">
@@ -64,20 +68,32 @@
             <h2 id="title-calculator" class="text-2xl font-bold pb-6 hover:cursor-default">Calculator</h2>
             <!-- content -->
             <div class="flex flex-col-reverse 2xl:flex-row justify-center items-center">
-                <img class="max-w-2xl border-4 border-white mx-auto mb-6 lg:mb-0 lg:mr-12"
-                    src="assets/calculator.jpg" alt="picture of a calculator app">
-                <p class="text-xl sm:px-12 pb-12">Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                    reprehenderit enim labore culpa sint ad nisi
-                    Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-                    Reprehenderit
-                    nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-                    Nostrud
-                    officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo
-                    officia
-                    dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi
-                    laboris
-                    ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit
-                    enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+                <img class="max-w-2xl border-4 border-white mx-auto mb-6 lg:mb-0 lg:mr-12" src="assets/calculator.jpg"
+                    alt="picture of a calculator app">
+                <div id="paragraph-carousel" class="carousel">
+                    <p class="text-xl sm:px-12 pb-12">I conceptualized and crafted this user-friendly tool from scratch.
+                        With a clean and intuitive interface, it allows users to perform basic arithmetic operations
+                        effortlessly. I designed the calculator with a responsive layout to ensure it works seamlessly
+                        on
+                        both desktop and mobile devices. The code behind it demonstrates my proficiency in JavaScript
+                        and
+                        web development, as I implemented the logic for addition, subtraction, multiplication, and
+                        division
+                        while ensuring accurate calculations. This project not only showcases my technical skills but
+                        also
+                        highlights my commitment to creating practical, user-centered web applications.</p>
+                    <p class="text-xl sm:px-12 pb-12">My JavaScript calculator is a web-based application developed
+                        using
+                        HTML, CSS, and JavaScript. The
+                        user interface features a responsive layout for compatibility across various devices. The
+                        JavaScript
+                        code handles the arithmetic operations, providing accurate results for addition, subtraction,
+                        multiplication, and division. The calculator's logic ensures proper operator precedence and
+                        error
+                        handling for a seamless user experience. This project demonstrates my proficiency in front-end
+                        web
+                        development, particularly in JavaScript, while emphasizing clean code and usability.</p>
+                </div>
             </div>
         </div>
 
@@ -90,24 +106,25 @@
             <div class="flex flex-col-reverse 2xl:flex-row justify-center items-center">
                 <img class="max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 border-4 border-white"
                     src="assets/foxy-gameplay.jpg" alt="picture of a platformer game about a fox">
-                <p class="text-xl sm:px-12 p-12">Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                    reprehenderit enim labore culpa sint ad nisi
-                    Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-                    Reprehenderit
-                    nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-                    Nostrud
-                    officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo
-                    officia
-                    dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi
-                    laboris
-                    ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
-                    velit
-                    enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+                <p class="text-xl sm:px-12 p-12">As a solo developer, I brought this captivating 2D platformer to life,
+                    featuring the clever fox, Foxy, on a journey through lush forests, treacherous caves, and mysterious
+                    ruins. I handled every aspect, from character design and pixel art to coding Foxy's controls and
+                    crafting engaging levels. </p>
+                <p class="text-xl sm:px-12 p-12">With Windows Forms, I designed the game's graphical user interface,
+                    carefully placing windows, buttons, and UI elements to enhance the player's experience. Beneath the
+                    surface, I implemented complex logic to handle Foxy's movements, physics simulations for gravity and
+                    velocity, and meticulous collision detection to ensure a smooth and immersive gameplay. Foxy's
+                    animations and behaviors are all orchestrated through event-driven programming and game loops.</p>
             </div>
         </div>
     </div>
 
+    <!-- jquery -->
+    <script src="jquery.js"></script>
+    <!-- Javascript -->
     <script src="index.js"></script>
+    <!-- slick-carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
