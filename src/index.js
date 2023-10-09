@@ -3,34 +3,28 @@ let bullet2 = document.getElementById("bullet2");
 let bullet3 = document.getElementById("bullet3");
 
 let title = document.getElementById("title");
+let myWork = document.getElementById("myWork");
 
-//Function for title hover effect:
-title.addEventListener("mouseenter", function() {
-  title.innerText += "\n==============";
-});
-title.addEventListener("mouseleave", function() {
-  title.innerText = title.innerText.slice(0, -15);
-});
-// Functions for hover effect on bullet points:
-function hoverBullet(bullet) {
-  bullet.addEventListener("mouseenter", function () {
-    bullet.innerText = "* " + bullet.innerText;
+
+// element hover effect:
+function elementHover(element, symbol) {
+  element.addEventListener("mouseenter", function() {
+    element.innerText = symbol + " " + element.innerText;
   });
-}
 
-function leaveBullet(bullet) {
-  bullet.addEventListener("mouseleave", function() {
-    if (bullet.innerText.startsWith("*")) {
-      bullet.innerText = bullet.innerText.substring(1);
+  element.addEventListener("mouseleave", function() {
+    if (element.innerText.startsWith(symbol)) {
+      element.innerText = element.innerText.substring(symbol.length);
     }
   });
 }
 
-hoverBullet(bullet1);
-hoverBullet(bullet2);
-hoverBullet(bullet3);
+// titles
+elementHover(title, "#");
+elementHover(myWork, "##");
 
-leaveBullet(bullet1);
-leaveBullet(bullet2);
-leaveBullet(bullet3);
+// bullets
+elementHover(bullet1, "*");
+elementHover(bullet2, "*");
+elementHover(bullet3, "*");
 
