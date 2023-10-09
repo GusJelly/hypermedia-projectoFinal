@@ -19,9 +19,21 @@ function elementHover(element, symbol) {
   });
 }
 
+function titleHover(element, symbol) {
+  element.addEventListener("mouseenter", function() {
+    element.innerText = symbol + " " + element.innerText + " " + symbol;
+  });
+
+  element.addEventListener("mouseleave", function() {
+    for (let i = 0; i < element.innerText.length; i++) {
+      element.innerText = element.innerText.replace("=", "");
+    }
+  });
+}
+
 // titles
-elementHover(title, "#");
-elementHover(myWork, "##");
+titleHover(title, "=");
+elementHover(myWork, "#");
 
 // bullets
 elementHover(bullet1, "*");

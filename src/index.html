@@ -11,7 +11,7 @@
 <body class="bg-slate-800 text-white antialiased">
 
     <!-- navbar -->
-    <nav class="bg-teal-500">
+    <nav class="bg-teal-500 fixed">
         <ul class="flex">
             <li class="py-1 px-3 bg-slate-800"><a>Home</a></li>
             <li class="py-1 px-3 hover:bg-slate-800 hover:text-white hover:cursor-pointer transition-all"><a
@@ -22,24 +22,28 @@
     </nav>
 
     <!-- header -->
-    <h1 id="title" class="text-center text-6xl py-12 font-semibold">Gustavo Meireles</h1>
+    <i>
+        <h1 id="title" class="text-center text-6xl py-12 font-semibold hover:cursor-default">Gustavo Meireles</h1>
+    </i>
+
+    <!-- Bullet points -->
     <div class="pb-32">
         <div class="flex lg:px-52 md:px-36 sm:px-24">
-            <p id="bullet1" class="bullet py-5 pl-4 text-xl font-semibold hover:cursor-pointer">A Linux lover and daily
+            <p id="bullet1" class="bullet py-5 pl-4 text-xl font-semibold hover:cursor-default">A Linux lover and daily
                 enjoyer!</p>
         </div>
         <div class="flex lg:px-52 md:px-36 sm:px-24 font-semibold">
-            <p id="bullet2" class="bullet py-5 pl-4 text-xl hover:cursor-pointer">Lover of everything programming.</p>
+            <p id="bullet2" class="bullet py-5 pl-4 text-xl hover:cursor-default">Lover of everything programming.</p>
         </div>
         <div class="flex lg:px-52 md:px-36 sm:px-24">
-            <p id="bullet3" class="bullet py-5 pl-4 text-xl font-semibold hover:cursor-pointer">Life-long learner</p>
+            <p id="bullet3" class="bullet py-5 pl-4 text-xl font-semibold hover:cursor-default">Life-long learner</p>
         </div>
     </div>
 
     <!-- My work -->
     <div class="px-52 py-8 bg-teal-200 text-slate-800 flex justify-evenly">
         <div>
-            <h3 id="myWork" class="text-3xl font-bold pb-6 hover:cursor-pointer max-w-fit">My work</h3>
+            <h3 id="myWork" class="text-3xl font-bold pb-6 hover:cursor-default max-w-fit">My work</h3>
             <p class="text-xl pb-2 max-w-2xl">My portfolio will show the th breath of my habilities in the field of
                 computer programming and web/server programming.
                 I am a passionate linux programmer that wants to learn new things every day
@@ -49,10 +53,10 @@
                 done
                 in an effort to show
                 my work to the wider industry and to others. Hopefully I can prove that I can build the solutions
-                that your company or your clients require!</p>
+                that your company and clients require!</p>
         </div>
-            <img src="assets/pfp.jpg" alt="Photograph of Gustavo Meireles"
-            class="rounded-full border-8 border-white max-w-xl">
+        <img src="assets/pfp.jpg" alt="Photograph of Gustavo Meireles"
+            class="rounded-full border-8 border-white max-w-md drop-shadow">
     </div>
 
     <script src="index.js"></script>
