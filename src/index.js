@@ -1,8 +1,3 @@
-let bullet = document.getElementById("bullet");
-
-let title = document.getElementById("title");
-let bio = document.getElementById("bio");
-
 // element hover effect:
 function elementHover(element, symbol) {
   element.addEventListener("mouseenter", function() {
@@ -28,14 +23,25 @@ function titleHover(element, symbol) {
   });
 }
 
+
+let bullet = document.getElementById("bullet");
+let bio = document.getElementById("bio");
+let title = document.getElementById("title");
+let titleWeb = document.getElementById("title-web");
+let titleCalculator = document.getElementById("title-calculator");
+let titleDotnet = document.getElementById("title-dotnet");
+let titleFox = document.getElementById("title-fox");
+
 // titles
 titleHover(title, "=");
 elementHover(bio, "#");
+elementHover(titleWeb, "#");
+elementHover(titleCalculator, "##");
+elementHover(titleDotnet, "#");
+elementHover(titleFox, "##");
 
 // bullets
 elementHover(bullet, "*");
-// elementHover(bullet2, "*");
-// elementHover(bullet3, "*");
 
 
 // Change bullet point every couple of seconds:
@@ -52,4 +58,3 @@ function updateBulletPoint() {
 }
 
 const bulletPointInterval = setInterval(updateBulletPoint, 3000);
-
