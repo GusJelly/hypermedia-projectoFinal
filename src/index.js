@@ -1,36 +1,33 @@
 // element hover effect:
 function elementHover(element, symbol) {
-  element.addEventListener("mouseenter", function() {
-    element.innerText = symbol + " " + element.innerText;
+  $(element).on("mouseover", function() {
+    $(this).text(symbol + " " + $(this).text());
   });
 
-  element.addEventListener("mouseleave", function() {
-    if (element.innerText.startsWith(symbol)) {
-      element.innerText = element.innerText.substring(symbol.length);
+  $(element).on("mouseout", function() {
+    if ($(this).text().startsWith(symbol)) {
+      $(this).text($(this).text().substring(symbol.length));
     }
   });
 }
 
 function titleHover(element, symbol) {
-  element.addEventListener("mouseenter", function() {
-    element.innerText = symbol + " " + element.innerText + " " + symbol;
+  $(element).on("mouseover", function() {
+    $(this).text(symbol + " " + $(this).text() + " " + symbol);
   });
 
-  element.addEventListener("mouseleave", function() {
-    for (let i = 0; i < element.innerText.length; i++) {
-      element.innerText = element.innerText.replace("=", "");
-    }
+  $(element).on("mouseout", function() {
+    $(this).text($(this).text().replace("=", ""));
   });
 }
 
-
-let bullet = document.getElementById("bullet");
-let bio = document.getElementById("bio");
-let title = document.getElementById("title");
-let titleWeb = document.getElementById("title-web");
-let titleCalculator = document.getElementById("title-calculator");
-let titleDotnet = document.getElementById("title-dotnet");
-let titleFox = document.getElementById("title-fox");
+let bullet = $("#bullet");
+let bio = $("#bio");
+let title = $("#title");
+let titleWeb = $("#title-web");
+let titleCalculator = $("#title-calculator");
+let titleDotnet = $("#title-dotnet");
+let titleFox = $("#title-fox");
 
 // titles
 titleHover(title, "=");
@@ -43,14 +40,13 @@ elementHover(titleFox, "##");
 // bullets
 elementHover(bullet, "*");
 
-
 // Change bullet point every couple of seconds:
-const bulletPoints = ["Lover of programming.", "Linux Developer", "Web Developer"]
+const bulletPoints = ["Lover of programming.", "Linux Developer", "Web Developer"];
 let indexBulletPoint = 0;
 
 function updateBulletPoint() {
   if (indexBulletPoint < bulletPoints.length) {
-    bullet.innerText = bulletPoints[indexBulletPoint];
+    bullet.text(bulletPoints[indexBulletPoint]);
     indexBulletPoint++;
   } else {
     indexBulletPoint = 0;
@@ -58,3 +54,62 @@ function updateBulletPoint() {
 }
 const bulletPointInterval = setInterval(updateBulletPoint, 3000);
 console.log(bulletPointInterval);
+
+
+// carousel images
+
+// Calculator:
+// show image 2 on click
+$('#imgCalc1').on("click", function() {
+  console.log($(this) + " clicked");
+  $(this).addClass("hidden");
+  $('#imgCalc2').removeClass("hidden");
+});
+// show image 1 on click
+$('#imgCalc2').on("click", function() {
+  console.log(this + " clicked");
+  $(this).addClass("hidden");
+  $('#imgCalc1').removeClass("hidden");
+});
+
+// carousel paragraphs
+// show paragraph 2 on click
+$('#pCalc1').on('click', function() {
+  console.log($(this) + ' clicked');
+  $(this).addClass('hidden');
+  $('#pCalc2').removeClass('hidden');
+});
+// show paragraph 1 on click
+$('#pCalc2').on('click', function() {
+  console.log($(this) + ' clicked');
+  $(this).addClass('hidden');
+  $('#pCalc1').removeClass('hidden');
+});
+
+// Foxy the Fox:
+// show image 2 on click
+$('#imgFoxy1').on("click", function() {
+  console.log($(this) + " clicked");
+  $(this).addClass("hidden");
+  $('#imgFoxy2').removeClass("hidden");
+});
+// show image 1 on click
+$('#imgFoxy2').on("click", function() {
+  console.log(this + " clicked");
+  $(this).addClass("hidden");
+  $('#imgFoxy1').removeClass("hidden");
+});
+
+// carousel paragraphs
+// show paragraph 2 on click
+$('#pFoxy1').on('click', function() {
+  console.log($(this) + ' clicked');
+  $(this).addClass('hidden');
+  $('#pFoxy2').removeClass('hidden');
+});
+// show paragraph 1 on click
+$('#pFoxy2').on('click', function() {
+  console.log($(this) + ' clicked');
+  $(this).addClass('hidden');
+  $('#pFoxy1').removeClass('hidden');
+});
