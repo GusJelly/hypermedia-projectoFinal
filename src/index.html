@@ -25,14 +25,19 @@
         <!-- Bullet points -->
         <div class="px-6 sm:px-24 lg:px-32 xl:px-52 2xl:px-64">
             <i>
-                <p id="bullet" class="text-center bullet pt-5 pl-4 text-3xl font-semibold hover:cursor-default">Web Developer</p>
+                <p id="bullet" class="text-center bullet pt-5 pl-4 text-3xl font-semibold hover:cursor-default">Web
+                    Developer</p>
             </i>
         </div>
 
         <!-- Links Socials -->
         <div class="pt-36 pb-0">
-            <i class="fa-brands fa-linkedin text-3xl"></i>
-            <i class="fa-brands fa-square-github text-3xl"></i>
+            <a target="_blank" href="https://linkedin.com/in/gustavo-meireles-947620235/">
+                <i class="fa-brands fa-linkedin text-3xl"></i>
+            </a>
+            <a target="_blank" href="https://github.com/GusJelly">
+                <i class="fa-brands fa-square-github text-3xl"></i>
+            </a>
         </div>
     </div>
 
@@ -66,10 +71,10 @@
             <div class="flex flex-col-reverse 2xl:flex-row justify-center items-center">
                 <div>
                     <img id="imgCalc1"
-                        class="hover:cursor-pointer max-w-2xl hover:border-4 hover:border-white transition-all mx-auto mb-6 lg:mb-0 lg:mr-12"
+                        class="hover:cursor-pointer xl:max-w-2xl hover:border-4 hover:border-white transition-all mx-auto mb-6 lg:mb-0 lg:mr-12 sm:max-w-full"
                         src="assets/calculator.jpg" alt="picture of a calculator app">
                     <img id="imgCalc2"
-                        class="hover:cursor-pointer hidden max-w-2xl hover:border-4 hover:border-white transition-all mx-auto mb-6 lg:mb-0 lg:mr-12"
+                        class="hover:cursor-pointer hidden 2xl:max-w-2xl hover:border-4 hover:border-white transition-all mx-auto mb-6 lg:mb-0 lg:mr-12"
                         src="assets/calculatorJS.png" alt="picture of the calculator app code">
                 </div>
                 <div>
@@ -110,22 +115,21 @@
             <!-- content -->
             <div class="flex flex-col-reverse 2xl:flex-row justify-center items-center">
                 <img id="imgFoxy1"
-                    class="personalImg max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                    class="personalImg 2xl:max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer sm:max-w-full"
                     src="assets/foxy-gameplay.jpg" alt="picture of a platformer game about a fox">
                 <img id="imgFoxy2"
-                    class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                    class="personalImg hidden 2xl:max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer sm:max-w-full"
                     src="assets/foxyCode.png" alt="picture of a platformer game about a fox">
                 <img id="imgFoxy3"
-                    class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                    class="personalImg hidden 2xl:max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer sm:max-w-full"
                     src="assets/FoxyLand.jpg" alt="picture of a platformer game about a fox">
-                <p id="pFoxy1"
-                    class="personalPar text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">As a
+                <p id="pFoxy1" class="hover:cursor-pointer hover:scale-105 text-xl transition-all sm:px-12 pb-12">As a
                     solo developer, I brought this captivating 2D platformer to life,
                     featuring the clever fox, Foxy, on a journey through lush forests, treacherous caves, and mysterious
                     ruins. I handled every aspect, from character design and pixel art to coding Foxy's controls and
                     crafting engaging levels. </p>
                 <p id="pFoxy2"
-                    class="personalPar hidden text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">
+                    class="hidden hover:cursor-pointer hover:scale-105 text-xl transition-all sm:px-12 pb-12">
                     With Windows Forms, I designed the game's graphical user interface,
                     carefully placing windows, buttons, and UI elements to enhance the player's experience. Beneath the
                     surface, I implemented complex logic to handle Foxy's movements, physics simulations for gravity and
@@ -136,61 +140,66 @@
     </div>
 
     <!-- Personal Projects -->
-    <div class="px-6 xl:px-52 py-16 bg-slate-600">
+    <div class="px-6 2xl:px-52 sm:px-6 py-16 bg-slate-600">
         <h1 id="title-personal" class="text-3xl font-bold pb-12 hover:cursor-default">Personal projects</h1>
         <h2 id="title-bash" class="text-2xl font-bold pb-6 hover:cursor-default">Bash scripting</h2>
 
         <div class="mb-12 hover:cursor-pointer hover:scale-105 transition-all">
             <!-- content -->
             <div id="script1" class="script flex flex-col-reverse 2xl:flex-row justify-center items-center">
-                <img id="imgBash1" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
+                <img id="imgBash1"
+                    class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 sm:max-w-full"
                     src="assets/bashRam.png" alt="picture of bash code">
-                <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
+                <div class="pBash hover:cursor-pointer text-xl sm:px-6 transition-all">
                     <i>
                         <h3 id="bashCpu" class="font-bold text-2xl">CPU.SH</h3>
                     </i>
-                    <p>is my
+                    <p class="text-xl transition-all sm:px-12 pb-12">My
                         go-to script for monitoring and managing CPU-related tasks on my Linux machine. It displays CPU
                         information, usage statistics, and even allows me to set performance profiles. It's handy for
                         optimizing my system's performance, especially during resource-intensive tasks.</p>
                 </div>
             </div>
             <div id="script2" class="script flex flex-col-reverse 2xl:flex-row justify-center items-center hidden">
-                <img id="imgBash2" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
+                <img id="imgBash2"
+                    class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 sm:max-w-full"
                     src="assets/bashDisk.png" alt="picture of bash code">
-                <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
+                <div class="pBash hover:cursor-pointer text-xl sm:px-6 transition-all">
                     <i>
                         <h3 id="bashDisk" class="font-bold text-2xl">DISK.SH</h3>
                     </i>
-                    <p>With
-                        disk.sh, I keep an eye on my disk usage and perform maintenance tasks as needed. It provides me
+                    <p class="text-xl transition-all sm:px-12 pb-12">With
+                        disk.sh, I keep an eye on my disk usage and perform maintenance tasks as needed. It provides
+                        me
                         with
                         a snapshot of my disk space and helps me identify areas where I might need to clean up or
                         optimize
                         storage. Keeping my disks tidy is essential for efficient development.</p>
                 </div>
             </div>
-            <div id="script3" class="script flex flex-col-reverse 2xl:flex-row justify-center items-center hidden">
-                <img id="imgBash3" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
-                    src="assets/bashProj.png" alt="picture of bash code">
-                <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
-                    <i>
-                        <h3 id="bashProj" class="font-bold text-2xl">PROJ.SH</h3>
-                    </i>
-                    <p>
-                        projectsD.sh is a script that simplifies the management of my personal development projects. It
-                        might automate tasks like creating project directories, initializing Git repositories, or
-                        setting up
-                        project-specific environments. This script streamlines my workflow and ensures consistency
-                        across my
-                        projects.</p>
-                </div>
+        </div>
+        <div id="script3" class="script flex flex-col-reverse 2xl:flex-row justify-center items-center hidden">
+            <img id="imgBash3"
+                class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 sm:max-w-full"
+                src="assets/bashProj.png" alt="picture of bash code">
+            <div class="pBash hover:cursor-pointer text-xl sm:px-6 transition-all">
+                <i>
+                    <h3 id="bashProj" class="font-bold text-2xl">PROJ.SH</h3>
+                </i>
+                <p class="text-xl transition-all sm:px-12 pb-12">
+                    ProjectsD.sh is a script that simplifies the management of my personal development projects.
+                    It
+                    might automate tasks like creating project directories, initializing Git repositories, or
+                    setting up
+                    project-specific environments. This script streamlines my workflow and ensures consistency
+                    across my
+                    projects.</p>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-black pr-24 py-12 flex justify-evenly">
+    <footer class="bg-black py-12 xl:flex xl:justify-evenly sm:flex sm:flex-row sm:justify-evenly">
         <ul id="footerInfo">
             <h3 class="font-bold">CONTACTS</h3>
             <li class="pl-6">gugatpm@gmail.com</li>
@@ -202,8 +211,9 @@
         </ul>
         <ul id="footerInfo">
             <h3 class="font-bold">SOCIALS</h3>
-            <li class="pl-6"><a href="https://linkedin.com/in/gustavo-meireles-947620235/">Linkedin</a></li>
-            <li class="pl-6"><a href="https://github.com/GusJelly">Github</a></li>
+            <li class="pl-6"><a target="_blank" href="https://linkedin.com/in/gustavo-meireles-947620235/">Linkedin</a>
+            </li>
+            <li class="pl-6"><a target="_blank" href="https://github.com/GusJelly">Github</a></li>
         </ul>
     </footer>
 

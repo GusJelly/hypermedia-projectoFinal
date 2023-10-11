@@ -611,6 +611,10 @@ video {
   max-width: 24rem;
 }
 
+.max-w-screen-sm {
+  max-width: 640px;
+}
+
 .resize {
   resize: both;
 }
@@ -953,6 +957,60 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:w-screen {
+    width: 100vw;
+  }
+
+  .sm\:max-w-fit {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .sm\:max-w-screen-sm {
+    max-width: 640px;
+  }
+
+  .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .sm\:max-w-min {
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+
+  .sm\:max-w-sm {
+    max-width: 24rem;
+  }
+
+  .sm\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .sm\:max-w-full {
+    max-width: 100%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -961,6 +1019,19 @@ video {
   .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 }
 
@@ -992,6 +1063,10 @@ video {
     max-width: 28rem;
   }
 
+  .xl\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -1004,6 +1079,10 @@ video {
     justify-content: space-between;
   }
 
+  .xl\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .xl\:px-52 {
     padding-left: 13rem;
     padding-right: 13rem;
@@ -1011,6 +1090,14 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:flex {
+    display: flex;
+  }
+
+  .\32xl\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .\32xl\:flex-row {
     flex-direction: row;
   }
@@ -1018,6 +1105,11 @@ video {
   .\32xl\:px-64 {
     padding-left: 16rem;
     padding-right: 16rem;
+  }
+
+  .\32xl\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 }
 
