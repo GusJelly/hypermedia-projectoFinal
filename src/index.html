@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1690926dd1.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-slate-800 text-white antialiased">
@@ -18,17 +19,20 @@
     </nav>
 
     <!-- header -->
-    <div class="text-center py-12">
+    <div class="text-center pt-52">
         <h1 id="title" class="text-6xl font-semibold hover:cursor-default">Gustavo Meireles</h1>
-    </div>
 
-    <!-- Bullet points -->
-    <div class="pb-16">
+        <!-- Bullet points -->
         <div class="px-6 sm:px-24 lg:px-32 xl:px-52 2xl:px-64">
-            <p id="bullet" class="text-center bullet py-5 pl-4 text-3xl font-semibold hover:cursor-default">A Linux
-                lover
-                and daily
-                enjoyer!</p>
+            <i>
+                <p id="bullet" class="text-center bullet pt-5 pl-4 text-3xl font-semibold hover:cursor-default">Web Developer</p>
+            </i>
+        </div>
+
+        <!-- Links Socials -->
+        <div class="pt-36 pb-0">
+            <i class="fa-brands fa-linkedin text-3xl"></i>
+            <i class="fa-brands fa-square-github text-3xl"></i>
         </div>
     </div>
 
@@ -105,18 +109,23 @@
             <h2 id="title-fox" class="text-2xl font-bold pb-6 hover:cursor-default">Foxy the Fox</h2>
             <!-- content -->
             <div class="flex flex-col-reverse 2xl:flex-row justify-center items-center">
-                <img id="imgFoxy1" class="personalImg max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                <img id="imgFoxy1"
+                    class="personalImg max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
                     src="assets/foxy-gameplay.jpg" alt="picture of a platformer game about a fox">
-                <img id="imgFoxy2" class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                <img id="imgFoxy2"
+                    class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
                     src="assets/foxyCode.png" alt="picture of a platformer game about a fox">
-                <img id="imgFoxy3" class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                <img id="imgFoxy3"
+                    class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
                     src="assets/FoxyLand.jpg" alt="picture of a platformer game about a fox">
-                <p id="pFoxy1" class="personalPar text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">As a
+                <p id="pFoxy1"
+                    class="personalPar text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">As a
                     solo developer, I brought this captivating 2D platformer to life,
                     featuring the clever fox, Foxy, on a journey through lush forests, treacherous caves, and mysterious
                     ruins. I handled every aspect, from character design and pixel art to coding Foxy's controls and
                     crafting engaging levels. </p>
-                <p id="pFoxy2" class="personalPar hidden text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">
+                <p id="pFoxy2"
+                    class="personalPar hidden text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">
                     With Windows Forms, I designed the game's graphical user interface,
                     carefully placing windows, buttons, and UI elements to enhance the player's experience. Beneath the
                     surface, I implemented complex logic to handle Foxy's movements, physics simulations for gravity and
@@ -137,7 +146,9 @@
                 <img id="imgBash1" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
                     src="assets/bashRam.png" alt="picture of bash code">
                 <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
-                    <h3 class="font-bold text-2xl">CPU.SH</h3>
+                    <i>
+                        <h3 id="bashCpu" class="font-bold text-2xl">CPU.SH</h3>
+                    </i>
                     <p>is my
                         go-to script for monitoring and managing CPU-related tasks on my Linux machine. It displays CPU
                         information, usage statistics, and even allows me to set performance profiles. It's handy for
@@ -148,7 +159,9 @@
                 <img id="imgBash2" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
                     src="assets/bashDisk.png" alt="picture of bash code">
                 <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
-                    <h3 class="font-bold text-2xl">DISK.SH</h3>
+                    <i>
+                        <h3 id="bashDisk" class="font-bold text-2xl">DISK.SH</h3>
+                    </i>
                     <p>With
                         disk.sh, I keep an eye on my disk usage and perform maintenance tasks as needed. It provides me
                         with
@@ -161,7 +174,9 @@
                 <img id="imgBash3" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
                     src="assets/bashProj.png" alt="picture of bash code">
                 <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
-                    <h3 class="font-bold text-2xl">PROJ.SH</h3>
+                    <i>
+                        <h3 id="bashProj" class="font-bold text-2xl">PROJ.SH</h3>
+                    </i>
                     <p>
                         projectsD.sh is a script that simplifies the management of my personal development projects. It
                         might automate tasks like creating project directories, initializing Git repositories, or
@@ -173,6 +188,24 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-black pr-24 py-12 flex justify-evenly">
+        <ul id="footerInfo">
+            <h3 class="font-bold">CONTACTS</h3>
+            <li class="pl-6">gugatpm@gmail.com</li>
+            <li class="pl-6">935712498</li>
+            <li class="pl-6">ATEC Palmela</li>
+            <li class="pl-12">Quinta da Marqueza - Palmela <br> Parque Industrial da Volkswagen Autoeuropa <br> 2950-557
+                Q.ta do
+                Anjo</li>
+        </ul>
+        <ul id="footerInfo">
+            <h3 class="font-bold">SOCIALS</h3>
+            <li class="pl-6"><a href="https://linkedin.com/in/gustavo-meireles-947620235/">Linkedin</a></li>
+            <li class="pl-6"><a href="https://github.com/GusJelly">Github</a></li>
+        </ul>
+    </footer>
 
     <!-- Jquery -->
     <script src="jquery.js"></script>

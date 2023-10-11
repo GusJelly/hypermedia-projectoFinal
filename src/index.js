@@ -37,6 +37,11 @@ elementHover(titleWeb, "#");
 elementHover(titleCalculator, "##");
 elementHover(titleDotnet, "#");
 elementHover(titleFox, "##");
+elementHover($("#title-personal"), "#");
+elementHover($("#title-bash"), "##");
+elementHover($("#bashCpu"), "###");
+elementHover($("#bashDisk"), "###");
+elementHover($("#bashProj"), "###");
 
 // bullets
 elementHover(bullet, "*");
@@ -51,6 +56,7 @@ function updateBulletPoint() {
     indexBulletPoint++;
   } else {
     indexBulletPoint = 0;
+    bullet.text(bulletPoints[indexBulletPoint]);
   }
 }
 const bulletPointInterval = setInterval(updateBulletPoint, 3000);
