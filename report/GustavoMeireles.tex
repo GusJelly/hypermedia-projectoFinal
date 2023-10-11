@@ -1,0 +1,221 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+% javascript colors
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+
+\title{Relatório do Meu Projeto: Portfolio Pessoal}
+\author{Aluno: Gustavo Meireles}
+\date{Data de Entrega: \today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introdução}
+Este relatório visa descrever o projeto do meu website pessoal, no qual apresento o meu portfólio e informações sobre mim. A missão principal do website é mostrar as minhas habilidades como desenvolvedor e compartilhar os projetos em que trabalhei. Nesta parte, irei detalhar as tecnologias, frameworks e funcionalidades que utilizei para criar o website.
+
+\section{Missão e Objetivos}
+O meu website tem como missão principal apresentar o meu portfólio e destacar o meu trabalho como desenvolvedor. Os objetivos específicos incluem:
+
+\begin{itemize}
+    \item Apresentar informações pessoais e de contato.
+    \item Destacar projetos de web development e .NET.
+    \item Apresentar os meus projetos pessoais de scripts Bash.
+    \item Fornecer uma experiência de usuário interativa e responsiva.
+    \item Conectar-me a potenciais empregadores ou colaboradores.
+\end{itemize}
+
+\section{Detalhes Técnicos}
+Nesta secção, irei explicar as tecnologias e componentes técnicos que utilizei para desenvolver o website.
+
+\subsection{Tecnologias Front-End}
+Para o desenvolvimento do front-end do meu website, utilizei as seguintes tecnologias:
+
+\begin{itemize}
+    \item HTML para a estrutura do conteúdo.
+    \item CSS para a estilização e layout.
+    \item JavaScript para tornar o site interativo.
+    \item Framework jQuery para facilitar a interação com elementos da página.
+    \item Font Awesome para ícones.
+\end{itemize}
+
+\subsection{Estrutura do Site}
+O meu website está organizado em várias seções de conteúdo, incluindo:
+
+\begin{itemize}
+    \item Cabeçalho: Apresenta o meu nome e pontos-chave.
+    \item Sobre Mim: Contém uma breve introdução sobre mim.
+    \item Projetos: Destaca os meus projetos de web development e .NET.
+    \item Projetos Pessoais: Apresenta os meus scripts Bash pessoais.
+    \item Rodapé: Inclui informações de contato e links para redes sociais.
+\end{itemize}
+
+\subsection{Funcionalidades Interativas}
+Para tornar o meu website mais interativo, implementei as seguintes funcionalidades:
+
+\begin{itemize}
+    \item Efeitos de Hover: Adicionei efeitos de hover a títulos, parágrafos e bullet points para fornecer feedback visual quando os visitantes passam o cursor sobre eles.
+    \item Carrossel de Imagens: Implementei um carrossel de imagens para apresentar detalhes de projetos. Os visitantes podem clicar nas imagens para alternar entre diferentes visualizações.
+    \item Atualização Automática de Bullet Points: Os bullet points na parte superior da página são atualizados automaticamente a cada poucos segundos para exibir mensagens diferentes.
+\end{itemize}
+
+\subsection{Funcionalidades Interativas}
+Para tornar o meu website mais interativo, implementei as seguintes funcionalidades:
+
+\subsubsection{Efeito de Destaque em Elementos}
+Implementei um efeito de destaque em elementos da página que é ativado quando os visitantes passam o cursor sobre eles. Para isso, utilizei o jQuery, que é uma biblioteca JavaScript amplamente usada para simplificar interações com elementos da página.
+
+\begin{lstlisting}[language=JavaScript]
+function elementHover(element, symbol) {
+  $(element).on("mouseenter", function() {
+    $(this).text(symbol + " " + $(this).text());
+  });
+
+  $(element).on("mouseleave", function() {
+    if ($(this).text().startsWith(symbol)) {
+      $(this).text($(this).text().substring(symbol.length));
+    }
+  });
+}
+
+elementHover(bio, "#");
+elementHover(titleWeb, "#");
+elementHover(titleCalculator, "##");
+elementHover(titleDotnet, "#");
+elementHover(titleFox, "##");
+elementHover($("#title-personal"), "#");
+elementHover($("#title-bash"), "##");
+elementHover($("#bashCpu"), "###");
+elementHover($("#bashDisk"), "###");
+elementHover($("#bashProj"), "###");
+\end{lstlisting}
+
+Este código adiciona um efeito que prefixa os elementos de texto com símbolos específicos, como "\#" ou "\#\#", ao passar o cursor sobre eles, tornando-os mais destacados. Quando o cursor é removido, os símbolos são removidos. Isso é uma técnica usada para chamar a atenção dos visitantes para informações importantes na página.
+
+\newpage
+
+\subsubsection{Efeito de Destaque em Pontos de Bala}
+Além disso, também adicionei um efeito de destaque a pontos de bala, que são atualizados automaticamente a cada poucos segundos.
+
+\begin{lstlisting}[language=JavaScript]
+// bullets
+elementHover(bullet, "*");
+
+// Change bullet point every couple of seconds:
+const bulletPoints = ["Lover of programming.", "Linux Developer", "Web Developer"];
+let indexBulletPoint = 0;
+
+function updateBulletPoint() {
+  if (indexBulletPoint < bulletPoints.length) {
+    bullet.text(bulletPoints[indexBulletPoint]);
+    indexBulletPoint++;
+  } else {
+    indexBulletPoint = 0;
+    bullet.text(bulletPoints[indexBulletPoint]);
+  }
+}
+const bulletPointInterval = setInterval(updateBulletPoint, 3000);
+console.log(bulletPointInterval);
+\end{lstlisting}
+
+Aqui, os pontos de bala são destacados com um asterisco "*" quando o cursor está sobre eles. Além disso, a função `updateBulletPoint` é usada para alternar automaticamente entre mensagens de destaque em intervalos de três segundos.
+
+\subsubsection{Carrossel de Imagens}
+Implementei um carrossel de imagens em algumas seções do website, permitindo aos visitantes clicar para ver diferentes imagens e parágrafos. Por exemplo, no projeto "Calculator" e na seção "Foxy the Fox".
+
+\begin{lstlisting}[language=JavaScript]
+// Calculator:
+// show image 2 on click
+$('#imgCalc1').on("click", function() {
+  $(this).addClass("hidden");
+  $('#imgCalc2').removeClass("hidden");
+});
+
+// show image 1 on click
+$('#imgCalc2').on("click", function() {
+  $(this).addClass("hidden");
+  $('#imgCalc1').removeClass("hidden");
+});
+
+// carousel paragraphs
+// show paragraph 2 on click
+$('#pCalc1').on('click', function() {
+  $(this).addClass('hidden');
+  $('#pCalc2').removeClass('hidden');
+});
+
+// show paragraph 1 on click
+$('#pCalc2').on('click', function() {
+  $(this).addClass('hidden');
+  $('#pCalc1').removeClass('hidden');
+}
+
+// Foxy the Fox:
+// ...
+\end{lstlisting}
+
+Nessas seções, os visitantes podem clicar nas imagens ou parágrafos para alternar entre diferentes visualizações, oferecendo uma experiência mais interativa e envolvente.
+
+Essas funcionalidades interativas contribuem para a usabilidade e atração do website, tornando-o mais envolvente para os visitantes.
+
+\subsection{Frameworks e Bibliotecas}
+No projeto, dependi das seguintes tecnologias e recursos:
+
+\begin{itemize}
+    \item Framework jQuery: Utilizado para facilitar interações com elementos da página, como o carrossel de imagens.
+    \item Font Awesome: Utilizado para incorporar ícones de redes sociais e outros elementos visuais.
+    \item Tailwindcss: Utilizado como framework para criar o estilo gráfico da página ao invés de CSS tradicional
+\end{itemize}
+
+\subsection{Webgrafia de Recursos}
+Recorri aos seguintes recursos externos no projeto:
+
+\begin{itemize}
+    \item Font Awesome: \url{fontawesome.com}
+    \item jQuery: \url{jquery.com}
+    \item tailwindcss \url{tailwindcss.com}
+\end{itemize}
+
+\section{Conclusão}
+O meu website é uma representação eficaz das minhas habilidades e projetos. Utilizei HTML, CSS e JavaScript para criar uma experiência de usuário responsiva e interativa. A incorporação de ícones do Font Awesome e o menu de navegação fixo aprimoram a estética e a usabilidade do site. As funcionalidades interativas, como os efeitos de hover e o carrossel de imagens, proporcionam uma experiência envolvente para os visitantes.
+
+\end{document}
