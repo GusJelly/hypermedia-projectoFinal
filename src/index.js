@@ -1,10 +1,10 @@
 // element hover effect:
 function elementHover(element, symbol) {
-  $(element).on("mouseover", function() {
+  $(element).on("mouseenter", function() {
     $(this).text(symbol + " " + $(this).text());
   });
 
-  $(element).on("mouseout", function() {
+  $(element).on("mouseleave", function() {
     if ($(this).text().startsWith(symbol)) {
       $(this).text($(this).text().substring(symbol.length));
     }
@@ -12,14 +12,15 @@ function elementHover(element, symbol) {
 }
 
 function titleHover(element, symbol) {
-  $(element).on("mouseover", function() {
+  $(element).on("mouseenter", function() {
     $(this).text(symbol + " " + $(this).text() + " " + symbol);
   });
 
-  $(element).on("mouseout", function() {
-    $(this).text($(this).text().replace("=", ""));
+  $(element).on("mouseleave", function() {
+    $(this).text($(this).text().replaceAll(symbol, ""));
   });
 }
+
 
 let bullet = $("#bullet");
 let bio = $("#bio");
@@ -62,12 +63,15 @@ console.log(bulletPointInterval);
 // show image 2 on click
 $('#imgCalc1').on("click", function() {
   console.log($(this) + " clicked");
+
   $(this).addClass("hidden");
   $('#imgCalc2').removeClass("hidden");
 });
+
 // show image 1 on click
 $('#imgCalc2').on("click", function() {
   console.log(this + " clicked");
+
   $(this).addClass("hidden");
   $('#imgCalc1').removeClass("hidden");
 });
@@ -76,12 +80,15 @@ $('#imgCalc2').on("click", function() {
 // show paragraph 2 on click
 $('#pCalc1').on('click', function() {
   console.log($(this) + ' clicked');
+
   $(this).addClass('hidden');
   $('#pCalc2').removeClass('hidden');
 });
+
 // show paragraph 1 on click
 $('#pCalc2').on('click', function() {
   console.log($(this) + ' clicked');
+
   $(this).addClass('hidden');
   $('#pCalc1').removeClass('hidden');
 });
@@ -90,12 +97,23 @@ $('#pCalc2').on('click', function() {
 // show image 2 on click
 $('#imgFoxy1').on("click", function() {
   console.log($(this) + " clicked");
+
   $(this).addClass("hidden");
   $('#imgFoxy2').removeClass("hidden");
 });
-// show image 1 on click
+
+// show image 3 on click
 $('#imgFoxy2').on("click", function() {
   console.log(this + " clicked");
+
+  $(this).addClass("hidden");
+  $('#imgFoxy3').removeClass("hidden");
+});
+
+// show image 1 on click
+$('#imgFoxy3').on("click", function() {
+  console.log(this + " clicked");
+
   $(this).addClass("hidden");
   $('#imgFoxy1').removeClass("hidden");
 });
@@ -104,12 +122,15 @@ $('#imgFoxy2').on("click", function() {
 // show paragraph 2 on click
 $('#pFoxy1').on('click', function() {
   console.log($(this) + ' clicked');
+
   $(this).addClass('hidden');
   $('#pFoxy2').removeClass('hidden');
 });
+
 // show paragraph 1 on click
 $('#pFoxy2').on('click', function() {
   console.log($(this) + ' clicked');
+
   $(this).addClass('hidden');
   $('#pFoxy1').removeClass('hidden');
 });

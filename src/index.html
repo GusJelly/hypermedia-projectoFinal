@@ -109,15 +109,19 @@
             <h2 id="title-fox" class="text-2xl font-bold pb-6 hover:cursor-default">Foxy the Fox</h2>
             <!-- content -->
             <div class="flex flex-col-reverse 2xl:flex-row justify-center items-center">
-                <img id="imgFoxy1" class="max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                <img class="personalImg max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
                     src="assets/foxy-gameplay.jpg" alt="picture of a platformer game about a fox">
-                <img id="imgFoxy2" class="hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                <img class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
                     src="assets/foxyCode.png" alt="picture of a platformer game about a fox">
-                <p id="pFoxy1" class="text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">As a solo developer, I brought this captivating 2D platformer to life,
+                <img class="personalImg hidden max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12 hover:border-4 hover:border-white transition-all hover:cursor-pointer"
+                    src="assets/FoxyLand.jpg" alt="picture of a platformer game about a fox">
+                <p class="personalPar text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">As a
+                    solo developer, I brought this captivating 2D platformer to life,
                     featuring the clever fox, Foxy, on a journey through lush forests, treacherous caves, and mysterious
                     ruins. I handled every aspect, from character design and pixel art to coding Foxy's controls and
                     crafting engaging levels. </p>
-                <p id="pFoxy2" class="hidden text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">With Windows Forms, I designed the game's graphical user interface,
+                <p class="personalPar hidden text-xl sm:px-12 p-12 hover:cursor-pointer hover:scale-105 transition-all">
+                    With Windows Forms, I designed the game's graphical user interface,
                     carefully placing windows, buttons, and UI elements to enhance the player's experience. Beneath the
                     surface, I implemented complex logic to handle Foxy's movements, physics simulations for gravity and
                     velocity, and meticulous collision detection to ensure a smooth and immersive gameplay. Foxy's
@@ -126,10 +130,59 @@
         </div>
     </div>
 
+    <!-- Personal Projects -->
+    <div class="px-6 xl:px-52 py-16 bg-slate-600">
+        <h1 id="title-personal" class="text-3xl font-bold pb-12 hover:cursor-default">Personal projects</h1>
+        <h2 id="title-bash" class="text-2xl font-bold pb-6 hover:cursor-default">Bash scripting</h2>
+
+        <div class="mb-12 hover:cursor-pointer hover:scale-105 transition-all">
+            <!-- content -->
+            <div id="script1" class="script flex flex-col-reverse 2xl:flex-row justify-center items-center">
+                <img id="imgBash1" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
+                    src="assets/bashRam.png" alt="picture of bash code">
+                <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
+                    <h3 class="font-bold text-2xl">CPU.SH</h3>
+                    <p>is my
+                        go-to script for monitoring and managing CPU-related tasks on my Linux machine. It displays CPU
+                        information, usage statistics, and even allows me to set performance profiles. It's handy for
+                        optimizing my system's performance, especially during resource-intensive tasks.</p>
+                </div>
+            </div>
+            <div id="script2" class="script flex flex-col-reverse 2xl:flex-row justify-center items-center hidden">
+                <img id="imgBash2" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
+                    src="assets/bashDisk.png" alt="picture of bash code">
+                <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
+                    <h3 class="font-bold text-2xl">DISK.SH</h3>
+                    <p>With
+                        disk.sh, I keep an eye on my disk usage and perform maintenance tasks as needed. It provides me
+                        with
+                        a snapshot of my disk space and helps me identify areas where I might need to clean up or
+                        optimize
+                        storage. Keeping my disks tidy is essential for efficient development.</p>
+                </div>
+            </div>
+            <div id="script3" class="script flex flex-col-reverse 2xl:flex-row justify-center items-center hidden">
+                <img id="imgBash3" class="imgBash hover:cursor-pointer max-w-2xl mx-auto mb-6 lg:mb-0 lg:mr-12"
+                    src="assets/bashProj.png" alt="picture of bash code">
+                <div class="pBash hover:cursor-pointer text-xl sm:px-12 p-12 transition-all">
+                    <h3 class="font-bold text-2xl">PROJ.SH</h3>
+                    <p>
+                        projectsD.sh is a script that simplifies the management of my personal development projects. It
+                        might automate tasks like creating project directories, initializing Git repositories, or
+                        setting up
+                        project-specific environments. This script streamlines my workflow and ensures consistency
+                        across my
+                        projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Jquery -->
     <script src="jquery.js"></script>
     <!-- Javascript -->
     <script src="index.js"></script>
+    <script src="personalProjects.js"></script>
 </body>
 
 </html>
